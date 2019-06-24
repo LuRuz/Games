@@ -129,7 +129,7 @@ while True:
                     posX-= velSnake
                     tiempo =0
                     lastAction= 'LEFT'
-                    #Si la posicion no esta en la lista se añade y se elimina la cola, si ya esta es que ha chocado
+                    #Si la posicion no esta en la lista se aniade y se elimina la cola, si ya esta es que ha chocado
                     if (posX, posY) not in SNAKE:
                         SNAKE.append((posX,posY))
                         del SNAKE [0:1]
@@ -183,7 +183,7 @@ while True:
     for i in SNAKE:
         ventana.blit(black, i)
 
-    #Cada vez que pasa por el loop se añade 1 al contador de tiempo que controla la velocidad y el nivel    
+    #Cada vez que pasa por el loop se aniade 1 al contador de tiempo que controla la velocidad y el nivel    
     tiempo +=1
 
     #Actualiza lo que esta pasando en la ventana
