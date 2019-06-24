@@ -5,21 +5,21 @@ from pygame.locals import *
 from random import randint
 
 level=102
-TamanioX, TamanioY= 800, 600
+TamanioX, TamanioY= 800, 600 #tamanio del tablero
 
 pygame.init ()
-ventana = pygame.display.set_mode((TamanioX,TamanioY))
+ventana = pygame.display.set_mode((TamanioX,TamanioY)) #mostrar ventana
 pygame.display.set_caption("SNAKE") #Nombre de la ventana
 
-#Cargar imagen
+#Cargar imagenes
 green= pygame.image.load("imagenSnake/green.png")
 black= pygame.image.load("imagenSnake/black.png")
 red= pygame.image.load("imagenSnake/red.png")
 
 
-posX, posY= 15,15 #randint(0,TamanioX), randint(0, TamanioY)
+posX, posY= 15,15 #posicion inicial snake
 posXR, posYR=15,15
-SNAKE= [(posX, posY)]
+SNAKE= [(posX, posY)] #lista con cuerpo de snake
 
 
 velSnake= 50
@@ -28,7 +28,7 @@ comido= True
 lastAction= ""
 tiempo= 0
 
-#Funcion que crea posicion aleatoria para la casilla roja
+#Funcion que crea posicion aleatoria para la casilla roja centrada en el cuadrado verde
 def positionRed():
     #print ("HE ENTRADO A CREAR LA POSICION")
     posXR, posYR= randint(0,TamanioX-100), randint(0, TamanioY-100)
@@ -48,9 +48,7 @@ def positionRed():
 #loop para el juego
 while True:
     #print (tiempo, level)
-
-
-    #Dependiendo del nivel va a una velocidad u a otra.
+    #Dependiendo del nivel va a una velocidad u a otra (movimiento automatico que depende del ultimo movimiento)
     if tiempo> level:
         if lastAction=='LEFT':
             posX-= velSnake
@@ -131,6 +129,7 @@ while True:
                     posX-= velSnake
                     tiempo =0
                     lastAction= 'LEFT'
+                    #Si la posicion no esta en la lista se añade y se elimina la cola, si ya esta es que ha chocado
                     if (posX, posY) not in SNAKE:
                         SNAKE.append((posX,posY))
                         del SNAKE [0:1]
@@ -175,7 +174,7 @@ while True:
     #print ("Posicion negro:", posX, posY)
     #print ("Posicion rojo: ", posXR, posYR)
 
-    #Si el rojo y el negro se encuentran en el mismo punto se come
+    #Si el rojo y el negro se encuentran en el mismo punto se lo come
     if posX == posXR and posY== posYR:
         comido = True
         SNAKE.append((posX,posY))
@@ -183,8 +182,9 @@ while True:
     #Imprime toda la lista de la serpiente
     for i in SNAKE:
         ventana.blit(black, i)
-#        print ( i)
+
+    #Cada vez que pasa por el loop se añade 1 al contador de tiempo que controla la velocidad y el nivel    
     tiempo +=1
-    
+
     #Actualiza lo que esta pasando en la ventana
     pygame.display.update()
