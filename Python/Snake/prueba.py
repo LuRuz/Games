@@ -1,5 +1,5 @@
-'''n= int (input("Introduzca número elementos eje x: "))
-m= int (input("Introduzca número elementos eje y: "))
+'''n= int (input("Introduzca numero elementos eje x: "))
+m= int (input("Introduzca numero elementos eje y: "))
 tablero=[]
 fila= []
 
@@ -14,14 +14,14 @@ for imprimir in tablero:
 '''
 
 '''
-n= int (input("Introduzca número elementos eje x: "))
-m= int (input("Introduzca número elementos eje y: "))
+n= int (input("Introduzca numero elementos eje x: "))
+m= int (input("Introduzca numero elementos eje y: "))
 
 print ("----------------------------")
 for i in range (0, m):
     print ('X'*n)
 '''
-
+'''
 import sys
 
 x='si'
@@ -31,3 +31,14 @@ while x=='si':
     print ('Has presionado ', tecla)
     if tecla=='s':
         x='no'
+'''
+SNAKE= [(15,15),(15,16),(15,17)]
+posX, posY=15,15
+
+
+for i in range (0,100):
+    print ("Lista: ")
+    posX, posY= i, i
+    del SNAKE [0:1]
+    SNAKE.append((posX,posY))
+    print (SNAKE)
