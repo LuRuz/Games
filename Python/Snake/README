@@ -1,0 +1,6 @@
+To execute the game you must have python 2 and pygame installed. (You can find how to install it at https://www.pygame.org/wiki/)
+
+Command to execute in linux:
+        $ python snake.py
+        
+The folder 'imagenSnake' contains the images for the game. The other folders and files are only tests to learn python and pygame.
