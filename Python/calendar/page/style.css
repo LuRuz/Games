@@ -34,6 +34,11 @@ header>div{
     padding:1%;
 }
 
+.week{
+    background-color: dodgerblue;
+    color: white;
+}
+
 .size{
     height: 18%;
 }
