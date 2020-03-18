@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Calendar</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="mes">Calendar</h1>
+        </div>
+    </header>
+    <div id="month">
+        <!-- Lunes -->
+        <div class="column">
+            <div class="day first week">
+               <h3 id="prueba">Lunes</h3> 
+            </div>
+            <div class="day size first">
+                <p id="0"></p>
+            </div>
+            <div class="day size first">
+                <p id="7"></p>
+            </div>
+            <div class="day size first">
+                <p id="14"></p>
+            </div>
+            <div class="day size first">
+                <p id="21"></p>
+            </div>
+            <div class="day size first">
+                <p id="28"></p>
+            </div>
+        </div>
+
+        <!-- Martes -->
+        <div class="column">
+            <div class="day week">
+                <h3>Martes</h3>
+            </div>
+            <div class="day size">
+                <p id="1"></p>
+            </div>
+            <div class="day size">
+                <p id="8"></p>
+            </div>
+            <div class="day size">
+                <p id="15"></p>
+            </div>
+            <div class="day size">
+                <p id="22"></p>
+            </div>
+            <div class="day size">
+                <p id="29">aoeu</p>
+            </div>
+        </div>
+        
+        <!-- Miercoles -->
+        <div class="column">
+            <div class="day week">
+                <h3>Miercoles</h3>
+            </div>
+            <div class="day size">
+                <p id="2"></p>
+            </div>
+            <div class="day size">
+                <p id="9"></p>
+            </div>
+            <div class="day size">
+                <p id="16"></p>
+            </div>
+            <div class="day size">
+                <p id="23"></p>
+            </div>
+            <div class="day size">
+                <p id="30"></p>
+            </div>
+        </div>
+
+        <!-- Jueves -->
+        <div class="column">
+            <div class="day week">
+                <h3>Jueves</h3>
+            </div>
+            <div class="day size">
+                <p id="3"></p>
+            </div>
+            <div class="day size">
+                <p id="10"></p>
+            </div>
+            <div class="day size">
+                <p id="17"></p>
+            </div>
+            <div class="day size">
+                <p id="24"></p>
+            </div>
+            <div class="day size">
+                <p id="31"></pi]>
+            </div>
+        </div>
+
+        <!-- Viernes -->
+        <div class="column">
+            <div class="day week">
+                <h3>Viernes</h3>
+            </div>
+            <div class="day size">
+                <p id="4"></p>
+            </div>
+            <div class="day size">
+                <p id="11"></p>
+            </div>
+            <div class="day size">
+                <p id="18"></p>
+            </div>
+            <div class="day size">
+                <p id="25"></p>
+            </div>
+            <div class="day size">
+                <p id="32"></p>
+            </div>
+        </div>
+
+        <!-- Sabado -->
+        <div class="column">
+            <div class="day week">
+                <h3>Sabado</h3>
+            </div>
+            <div class="day size">
+                <p id="5"></p>
+            </div>
+            <div class="day size">
+                <p id="12"></p>
+            </div>
+            <div class="day size">
+                <p id="19"></p>
+            </div>
+            <div class="day size">
+                <p id="26"></p>
+            </div>
+            <div class="day size">
+                <p id="33"></p>
+            </div>
+        </div>
+
+        <!-- Domingo -->
+        <div class="column">
+            <div class="day week">
+                <h3>Domingo</h3>
+            </div>
+            <div class="day size">
+                <p id="6"></p>
+            </div>
+            <div class="day size">
+                <p id="13"></p>
+            </div>
+            <div class="day size">
+                <p id="20"></p>
+            </div>
+            <div class="day size">
+                <p id="27"></p>
+            </div>
+            <div class="day size">
+                <p id="34"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>lee_json()</script>
+</html>

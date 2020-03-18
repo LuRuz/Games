@@ -1,0 +1,63 @@
+header>div{
+    background-color: red; 
+    text-align: center; 
+    padding: 0px; 
+    margin-left: 10%; 
+    margin-right: 10%; 
+    margin-top: 3%;
+    border-color: black; 
+    border-width: 1%; 
+    border-style:solid ; 
+}
+
+#month{
+    margin-left: 10%; 
+    margin-right: 10%;
+    
+    display: flex;
+    
+}
+
+.column{
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.day{
+    border-right-color: black; 
+    border-right-width: 1%; 
+    border-right-style: solid;
+    border-bottom-color: black; 
+    border-bottom-width: 1%; 
+    border-bottom-style: solid;
+    
+    padding:1%;
+}
+
+.week{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.size{
+    height: 18%;
+}
+.first{
+    border-color: black; 
+    border-width: 1%; 
+    border-left-style: solid;
+}
+
+h1{
+    margin: 1%;
+   color: white; 
+}
+
+h3{
+    margin: 1%;
+    text-align: center;
+}
+
+p{
+    margin: 0px;
+}
