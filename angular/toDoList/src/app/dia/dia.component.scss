@@ -1,0 +1,52 @@
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+  }
+
+
+.container{
+    border: 0;
+    padding-bottom: 2rem;
+}
+h1{
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+.weekInMonth{
+    align-content: center;
+    background-color: #0c7b93;
+    padding: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+
+.dayInMonth{
+    border-style: solid;
+    background-color: #00a8cc;
+    border-color: white;
+    border-radius: 0.1rem;
+    width: 30rem;
+    height: 20rem;
+    margin-left: 15%;
+
+    margin-top: 2rem;
+}
+
+.return{
+    background-color: #27496d;
+    margin: 0.5rem;
+    margin-top: 2rem;
+    width: 10rem;
+    color: white;
+    text-align: center;
+    padding: 0,5rem;
+    border-radius: 0,5rem;
+}
+.return:hover {
+    background-color: #00a8cc;
+    color: black;
+}
+
+
